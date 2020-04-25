@@ -185,6 +185,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -298,33 +318,18 @@
       
         
           
-            <h1 id="布朗运动">布朗运动</h1>
-<p>参考资料 Shreve 金融随机分析</p>
-<h2 id="定义">定义</h2>
-<p>设<span class="math inline">\((\Omega,\mathcal{F},P)\)</span>是概率空间，对每个<span class="math inline">\(\omega\in\Omega\)</span>，假设存在依赖于<span class="math inline">\(\omega\)</span>的，满足<span class="math inline">\(W(0)=0\)</span>的<strong>连续函数</strong>。则<span class="math inline">\(W(t)(t\geq{0})\)</span>是一个布朗运动，如果对所有的<span class="math inline">\(0=t_{0}&lt;t_{1}&lt;t_{2}&lt;...&lt;t_{m}\)</span>，增量： <span class="math display">\[W(t_{1})=W(t_{1})-W(t_{0}),W(t_{2})-W(t_{1}),...,W(t_{m})-W(t_{m-1}) \]</span><br>
-两两独立，每个增量服从正态分布，并且 <span class="math display">\[ E[W(t_{i+1})-W(t_{i})]=0\]</span> <span class="math display">\[ Var[W(t_{i+1})-W(t_{i})]=t_{i+1}-t_{i}\]</span></p>
-<h3 id="解释">解释：</h3>
-<p><span class="math inline">\(\omega\)</span>可以理解为布朗运动的路径，一次随机试验相当于给定了一条路径上的W,在每条路径上W是连续的。</p>
-<h2 id="性质">性质</h2>
-<ul>
-<li>布朗运动是鞅 <span class="math inline">\(E(W(t)|\mathcal{F}(s))=W(s), t&gt;s\)</span></li>
-<li>布朗运动可看作随机游走的时间段趋于无限小的极限 <span class="math inline">\(W(t)=\sum_{i=1}^{n}X(\frac{i}{n}t)\)</span> 证明：特征函数法，多个独立变量（此处为Bernoulli）分布的和的特征函数可以连乘。</li>
-<li>布朗运动的二次变差为T,几乎必然成立（即成立的概率为1） <span class="math display">\[[W(t),W(t)]=\sum_{i=0}^n[W(t_{i})-W(t_{i-1})]^2\]</span><br>
-其中<span class="math inline">\(t_{0},t_{1}...\)</span>为一个分划，<span class="math inline">\(||\Pi||\)</span>为这个分划的最大间距。 则<span class="math inline">\(||\Pi||\rightarrow0\)</span>时，<span class="math inline">\([W(t),W(t)]=t\)</span><br>
-还可以记为dW(t)dW(t)=dt</li>
-<li>二次变差性质的证明：证明其期望趋近于t而方差趋于0</li>
-</ul>
-<h1 id="伊藤积分">伊藤积分</h1>
-<h2 id="表示形式">表示形式</h2>
-<p>布朗运动W(t)是处处不可微的，该如何定义积分：<br>
-<span class="math display">\[\int_0^T\Delta(t)dW(t) \]</span><br>
-其中<span class="math inline">\(\Delta(t)\)</span>是一个<span class="math inline">\(\mathcal{F}(t)\)</span>-可测的函数（可理解为在t时刻获得的信息足以确定<span class="math inline">\(\Delta(t)\)</span>的值）</p>
-<h2 id="定义-1">定义</h2>
-<p>从简单被积函数推广到非简单函数<br>
-简单被积函数<span class="math inline">\(\Delta(t)\)</span>:<br>
-<span class="math inline">\(\Pi=\{t_0,t_1,,...t_n\}\)</span>是[0,T]的一个分划，假定<span class="math inline">\(\Delta(t)\)</span>在每个子区间<span class="math inline">\([t_j,t_{j+1})\)</span>中是常量。</p>
-
-          
+          布朗运动
+参考资料 Shreve 金融随机分析
+定义
+设\((\Omega,\mathcal{F},P)\)是概率空间，对每个\(\omega\in\Omega\)，假设存在依赖于\(\omeg
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/10/options-math/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -442,24 +447,31 @@
       
         
           
-            <h1 id="衍生品知识">衍生品知识</h1>
-<h2 id="期货">期货</h2>
-<h2 id="互换">互换</h2>
-<h2 id="期权">期权</h2>
-<h3 id="数学准备">数学准备</h3>
-<h3 id="期权定价">期权定价</h3>
-<h3 id="期权交易">期权交易</h3>
-<h2 id="利率模型">利率模型</h2>
-<h1 id="多因子模型">多因子模型</h1>
-<h3 id="实证资产定价">实证资产定价</h3>
-<h3 id="因子检验">因子检验</h3>
-<h3 id="机器学习">机器学习</h3>
-<h3 id="策略产生">策略产生</h3>
-<h1 id="其他知识">其他知识</h1>
-<h3 id="深度学习">深度学习</h3>
-<h3 id="强化学习">强化学习</h3>
+          衍生品知识
+期货
+互换
+期权
+数学准备
+期权定价
+期权交易
+利率模型
+多因子模型
+实证资产定价
+因子检验
+机器学习
+策略产生
+其他知识
+深度学习
+强化学习
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/10/contents-md/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
